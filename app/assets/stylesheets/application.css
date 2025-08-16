@@ -14,18 +14,54 @@
  *= require_self
  */
 
- body {
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+main {
+  flex: 1;
 }
 
 .home-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 50vh;
+  align-items: flex-start;
+  padding-top: 33vh;
+  flex: 1;
 }
 
 .coming-soon-container {
   font-size: 2rem;
   text-align: center;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.site-footer a {
+  margin-top: auto;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-footer a:hover {
+  color: #111827;
 }
