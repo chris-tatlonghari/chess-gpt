@@ -30,6 +30,11 @@ main {
   flex: 1;
 }
 
+.main-container {
+  display: flex;
+  flex: 1;
+}
+
 .home-container {
   display: flex;
   justify-content: center;
