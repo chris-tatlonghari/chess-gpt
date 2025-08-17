@@ -1,13 +1,5 @@
-<script type="importmap">
-    {
-        "imports": {
-            "example": "https://cdnjs.cloudflare.com/ajax/libs/chessground/9.2.1/chessground.min.js"
-        }
-    }
-</script>
-
 <script type="module">
-    import { Chessground } from "example";
+    import { Chessground } from "chessground";
 
     const config = {};
     const ground = Chessground(document.getElementById('board'), config);
